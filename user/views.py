@@ -19,3 +19,6 @@ def register(request):
 
 def success(request):
     return render(request,'user/success.html')
+
+def profile(request):
+    return render(request,'user/profile.html')

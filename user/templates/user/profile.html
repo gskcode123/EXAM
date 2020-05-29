@@ -1,0 +1,166 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form-v10 by Colorlib</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/montserrat-font.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'fonts/material-design-iconic-font/css/material-design-iconic-font.min.css' %}">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+</head>
+<body class="form-v10">
+    
+	<div class="page-content">
+        
+        
+		<div class="form-v10-content">
+			<form class="form-detail" action="#" method="post" id="myform">
+				<div class="form-left">
+					<h2>General Infomation</h2>
+					<div class="form-row">
+                        
+						<select name="title">
+                            <option disabled="disabled" selected="selected"><b>Title</b></option>
+						    <option class="option" value="businessman">Businessman</option>
+						    <option class="option" value="reporter">Reporter</option>
+						    <option class="option" value="secretary">Secretary</option>
+						</select>
+						<span class="select-btn">
+						  	<i class="zmdi zmdi-chevron-down"></i>
+                        </span>
+                        
+                    </div>
+                    
+					<div class="form-group">
+                        
+						<div class="form-row form-row-1">
+							<input type="text" name="first_name" id="father_name" class="input-text" placeholder="Father Name" required>
+						</div>
+						<div class="form-row form-row-2">
+							<input type="text" name="last_name" id="mother_name" class="input-text" placeholder="Mother Name" required>
+						</div>
+					</div>
+					<div class="form-row">
+                            <div class="col-sm-9">
+                                <input type="date" id="birthDate" class="form-control">
+                            </div>
+                    </div>
+                    <div class="form-row">
+                        <select name="gender">
+                            <option disabled="disabled" selected="selected"><b>Gender</b></option>
+						    <option class="option" value="Male">Male</option>
+						    <option class="option" value="Female">Female</option>
+						    <option class="option" value="Other">Other</option>
+						</select>
+                        <span class="select-btn">
+                            <i class="zmdi zmdi-chevron-down"></i>
+                      </span>
+                    </div>
+					<div class="form-row">
+						<input type="text" name="company" class="company" id="company" placeholder="Company" required>
+					</div>
+					<div class="form-group">
+						<div class="form-row form-row-3">
+							<input type="text" name="business" class="business" id="business" placeholder="Business Arena" required>
+						</div>
+						<div class="form-row form-row-4">
+							<select name="employees">
+							    <option value="employees">Employees</option>
+							    <option value="trainee">Trainee</option>
+							    <option value="colleague">Colleague</option>
+							    <option value="associate">Associate</option>
+							</select>
+							<span class="select-btn">
+							  	<i class="zmdi zmdi-chevron-down"></i>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="form-right">
+					<h2>Contact Details</h2>
+					<div class="form-row">
+						<input type="text" name="street" class="street" id="street" placeholder="Street + Nr" required>
+					</div>
+					<div class="form-row">
+						<input type="text" name="additional" class="additional" id="additional" placeholder="Additional Information" required>
+					</div>
+					<div class="form-group">
+						<div class="form-row form-row-1">
+							<input type="text" name="zip" class="zip" id="zip" placeholder="Zip Code" required>
+						</div>
+						<div class="form-row form-row-2">
+							
+                        
+                                <select name="city">
+                                    <option disabled="disabled" selected="selected"><b>City</b></option>
+                                    <option class="option" value="Bikaner">Bikaner</option>
+                                    <option class="option" value="Jaipur">Jaipur</option>
+                                    <option class="option" value="Jodhpur">Jodhpur</option>
+                                </select>
+                                <span class="select-btn">
+                                      <i class="zmdi zmdi-chevron-down"></i>
+                                </span>
+                                
+                            
+						</div>
+                    </div>
+                    <div class="form-row">
+						<select name="state">
+                            <option disabled="disabled" selected="selected"><b>State</b></option>
+						    <option value="Vietnam">Rajasthan</option>
+						    <option value="Malaysia">Hariyana</option>
+						    <option value="India">Utar Pradesh</option>
+						</select>
+						<span class="select-btn">
+						  	<i class="zmdi zmdi-chevron-down"></i>
+						</span>
+					</div>
+					<div class="form-row">
+						<select name="country">
+                            <option disabled="disabled" selected="selected"><b>Country</b></option>
+						    <option value="Vietnam">Austrila</option>
+						    <option value="Malaysia">Malaysia</option>
+						    <option value="India">India</option>
+						</select>
+						<span class="select-btn">
+						  	<i class="zmdi zmdi-chevron-down"></i>
+						</span>
+					</div>
+					<div class="form-group">
+						<div class="form-row form-row-1">
+                            <select name="code">
+                                <option disabled="disabled" selected="selected"><b>Code+</b></option>
+                                <option value="India">+91</option>
+                                <option value="USA">+02</option>
+                                <option value="AFA">+22</option>
+                            </select>
+                            <span class="select-btn">
+                                  <i class="zmdi zmdi-chevron-down"></i>
+                            </span>
+							
+						</div>
+						<div class="form-row form-row-2">
+							<input type="text" name="phone" class="phone" id="phone" placeholder="Phone Number" required>
+						</div>
+					</div>
+					<div class="form-checkbox">
+						<label class="container"><p>I do accept the <a href="#" class="text">Terms and Conditions</a> of your site.</p>
+						  	<input type="checkbox" name="checkbox">
+						  	<span class="checkmark"></span>
+						</label>
+					</div>
+					<div class="form-row-last">
+                        <button class="btn btn-outline-info" type="submit">Next</button>
+                
+                    </div>
+                </div>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
