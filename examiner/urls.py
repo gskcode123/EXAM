@@ -21,5 +21,12 @@ from user import views as user_views
 from django.conf import settings
 from django.conf.urls.static import static
 urlpatterns = [  
-    path('',views.home,name='examiner_home')
+    path('',views.home,name='examiner_home'),
+    path('upload_registration_data',views.upload_registration_data,name='upload_registration_data'),
+    path('upload_paper_data',views.upload_paper_data,name='upload_paper_data'),
+    path('make_available',views.make_available,name='make_available'),
+    path('charts/',views.chart,name='chart'),
+    path('tables/',views.table,name='table')
+
+ 
 ] 

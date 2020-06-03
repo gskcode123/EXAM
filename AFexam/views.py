@@ -16,7 +16,7 @@ def panel(request):
         da = Profile.objects.filter(username_id = d[0]['id']).values('title')
         user_title = da[0]['title']
     except:
-        HttpResponse("Something went wrong Exception")
+        return redirect('profile')
     else:
         if user_title == 'Student':
             return redirect('student_home')

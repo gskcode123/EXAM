@@ -18,6 +18,7 @@ from django.contrib.auth import views as auth_views
 from django.urls import path,include
 from . import views
 from user import views as user_views
+from examiner import views as examiner_views
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -30,7 +31,8 @@ urlpatterns = [
     path('profile/',user_views.profile,name='profile'),  
     path('',views.home,name='home'),
     path('panel/',views.panel, name='panel'),
-    path('student_home/',include('student.urls'),name='student_home'),
-    path('examiner_home/',include('examiner.urls'),name='examiner_home')
+    path('student_home/',include('student.urls')),
+    path('examiner_home/',include('examiner.urls')),
+    
 
 ] 
