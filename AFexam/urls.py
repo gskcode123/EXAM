@@ -20,6 +20,7 @@ from . import views
 from user import views as user_views
 from django.conf import settings
 from django.conf.urls.static import static
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('register/',user_views.register,name='register'),
@@ -27,6 +28,9 @@ urlpatterns = [
     path('logout/',auth_views.LogoutView.as_view(template_name='user/logout.html'),name='logout'),
     path('success/',user_views.success,name='success'),  
     path('profile/',user_views.profile,name='profile'),  
-    path('',views.home),
-    path('panel/',views.panel, name='panel')
+    path('',views.home,name='home'),
+    path('panel/',views.panel, name='panel'),
+    path('student_home/',include('student.urls'),name='student_home'),
+    path('examiner_home/',include('examiner.urls'),name='examiner_home')
+
 ] 
