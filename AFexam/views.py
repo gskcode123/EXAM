@@ -27,12 +27,14 @@ def panel(request):
 
     
     return render(request,'examiner/index.html')
-    
+
 
     
-
-def examiner_home(request):
-    return HttpResponse("Hello")
-
-def student_home(request):
-    return HttpResponse("Hello")
+def about(request):
+    return render(request,'user/about.html')
+def service(request):
+    return render(request,'user/service.html')
+def portfolio(request):
+    return render(request,'user/portfolio.html')
+def contact(request):
+    return render(request,'user/contact.html')

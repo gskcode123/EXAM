@@ -1,0 +1,64 @@
+{% extends 'user/base.html' %}
+{% block content %}
+{% load static %}
+<!-- Contact-->
+<br><br><br><br><br><br><br><br><br><br>
+<section class="page-section" id="contact">
+    <div class="container">
+        <!-- Contact Section Heading-->
+        <div class="text-center">
+            <h2 class="page-section-heading text-secondary d-inline-block my-5">CONTACT</h2>
+        </div>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Contact Section Content-->
+        <div class="row justify-content-center">
+            <div class="col-lg-4">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="icon-contact mb-3"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="text-muted">Phone</div>
+                    <div class="lead font-weight-bold">+91 9649569940 (Whatsapp)</div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="icon-contact mb-3"><i class="far fa-envelope"></i></div>
+                    <div class="text-muted">Email</div><a class="lead font-weight-bold" href="mailto:bhuvneshsain344@gmail.com">bhuvneshsain344@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                       <h4 class="mb-4">LOCATION</h4>
+                        <p class="pre-wrap lead mb-0">Block 5- Gyandeep Colony,
+Biknaer (Rajasthan) , India.</p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="mb-4">SOCIAL MEDIA</h4><a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/bhuvnesh-sain-8b794612b/" target='new'><i class="fab fa-fw fa-linkedin-in"></i></a>
+                    </div>
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="mb-4">ABOUT DATA SCIENCE</h4>
+                        <p class="pre-wrap lead mb-0">Data Science continues to evolve as one of the most promising and in-demand career path for skilled professionals.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <section class="copyright py-4 text-center text-white">
+            <div class="container"><small class="pre-wrap">Copyright © Bhuvnesh Sain 2020  </small></div>
+        </section>
+{% endblock content %}
+        {% block javascript %}
+        {% endblock javascript %}
