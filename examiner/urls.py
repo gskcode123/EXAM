@@ -25,6 +25,7 @@ urlpatterns = [
     path('upload_registration_data',views.upload_registration_data,name='upload_registration_data'),
     path('upload_paper_data',views.upload_paper_data,name='upload_paper_data'),
     path('make_available',views.make_available,name='make_available'),
+    path('create_exam/',views.create_exam, name = 'create_exam'),
     path('charts/',views.chart,name='chart'),
     path('tables/',views.table,name='table')
 

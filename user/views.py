@@ -47,7 +47,8 @@ def profile(request):
             code = request.POST.get('code')
             number = request.POST['phone']
             id = User.objects.filter(username=current_user).values('id')
-            data = Profile(title=title,father_name = father_name, mother_name = mother_name, date_of_birth = date_of_birth,gender=gender,address=address,zip_code=zip_code,city=city,state = state,country=country,code=code,number=number,username_id=id[0]['id']) 
+            sa = id[0]['id']
+            data = Profile(title=title,father_name = father_name, mother_name = mother_name, date_of_birth = date_of_birth,gender=gender,address=address,zip_code=zip_code,city=city,state = state,country=country,code=code,number=number,username_id=sa) 
             data.save()
             return redirect('home')
         

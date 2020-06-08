@@ -1,0 +1,10 @@
+{% for i in sd %}
+{{i.subject_code}}
+
+
+
+<select class="form-control" id="subject_name">
+    <option disabled="disabled" selected="selected"></option>
+      <option>{{i.subject_name}}</option>
+    </select>
+    {% endfor %}
